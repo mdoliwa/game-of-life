@@ -3,3 +3,8 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+canvas {
+	display: block;
+	margin: 0 auto;
+}
