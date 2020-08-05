@@ -2,12 +2,7 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 const columns = 16, rows = columns * 2;
-console.log("document: ", document.documentElement.clientWidth, ' x ', document.documentElement.clientHeight);
-console.log("window: ", window.innerWidth, ' x ', window.innerHeight);
-console.log("body: ", document.body.clientWidth, ' x ', document.body.clientHeight);
-var cellWidth = Math.round(Math.min(window.innerWidth / columns, window.innerHeight / rows));
-
-console.log("width: ", cellWidth * rows, "height: ", cellWidth * columns);
+var cellWidth = Math.round(Math.min(window.innerWidth / columns, window.innerHeight / rows)) - 1;
 
 canvas.height = cellWidth * rows;
 canvas.width = cellWidth * columns;
