@@ -10,3 +10,20 @@ html, body {
 	justify-content: center;
 	align-items: center;
 }
+
+#game {
+	position: relative;
+}
+
+#menu {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
